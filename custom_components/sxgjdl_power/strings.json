@@ -1,0 +1,34 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "山西地电用电查询",
+        "description": "请输入您的户号和组织编号（orgNo），可在微信公众号用电查询页面 URL 中获取。",
+        "data": {
+          "cons_no": "户号 (consNo)",
+          "org_no": "供电所编号 (orgNo)",
+          "open_id": "微信 openId（可选，部分接口需要）",
+          "scan_interval": "刷新间隔（分钟）"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "无法连接到服务器，请检查网络",
+      "invalid_cons_no": "户号无效，请确认户号是否正确",
+      "unknown": "未知错误"
+    },
+    "abort": {
+      "already_configured": "该户号已添加"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "选项",
+        "data": {
+          "scan_interval": "刷新间隔（分钟）"
+        }
+      }
+    }
+  }
+}
